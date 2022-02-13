@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>clock</title>
+</head>
+
+<body>
+    <div class="container">
+        <p id="para"> the date is</p>
+    </div>
+    
+    <script>
+              
+const Option={
+    weekdays: 'long',
+    year:'numeric',
+    month:'long',
+    day:'numeric'
+}
+        function cl(){
+            let a= new Date();
+            let d=a.toLocaleDateString(undefined,Option);
+            let str=  ' time is    ='+ a.getHours ()+':'+ a.getMinutes() +' :'+ a.getSeconds()+'<br>'+d;
+       var pr= document.getElementById('para');
+       pr.innerHTML=str;
+       
+        } 
+        setInterval(cl,1000);
+       
+        </script>
+</body>
+</html>

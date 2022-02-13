@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation</title>
+    <style>
+        #box{
+            width: 400px;
+            height: 400px;
+            background: beige;
+            position: relative;
+        }
+        #para{
+            background-color: black;
+            width: 50px;
+            height: 50px;
+            position:absolute;
+        }
+        
+    </style>
+</head>
+<body>
+    <button  onclick=" animation()" id="name">
+button
+    </button>
+    <br>
+    <div id="box">    
+    <div id="para">
+ 
+    </div>
+
+    </div>
+        <script>
+            
+         function animation()
+         
+         {
+             console.log("oooooo");  
+            let id1=null;
+           
+           const element =document.getElementById("para");
+           let p=0;
+           clearInterval(id1);
+           id1= setInterval(ne1,5);
+             function ne1(){
+           
+             if(p == 360)
+             { 
+                
+                 clearInterval(id1);
+            }
+             else{
+                p++;
+                element.style.top=p+"px"; 
+                element.style.left=p+"px"; 
+                
+
+             }
+         }
+           
+         }
+     
+  
+       
+
+        </script>
+</body>
+</html>

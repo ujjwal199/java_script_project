@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form  name="myForm" action="./form_validation.html">
+       
+        Name: <input type="text" name="fname">
+        <input type="submit" value="Submit" onclick="validateForm()">
+        <p id="para"> hello </p>
+        </form>
+        <script>
+            function validateForm()
+             {
+          let x = document.forms["myForm"]["fname"].value;
+           if (x == "") 
+           {
+
+alert(" plz number entered");
+            }
+            else if(x>10||x<0)
+            {
+                alert("wrong number entered");
+               
+            }
+            else if(x<=10&&x>0)
+alert("its ok");
+
+            }
+        </script>
+</body>
+</html>

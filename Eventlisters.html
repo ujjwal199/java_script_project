@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>event listener</title>
+    <style>
+.container{
+    background-color: bisque;
+    padding: 8px;
+    margin: 30px;
+}
+p{
+    text-align: justify;
+
+
+}
+#btn1{
+ background-color: black;
+ color: white;
+ border: 2px solid red;
+ border-radius: 8px;
+ cursor: pointer;
+}
+#btn1 .hover{
+    background-color: rgb(36, 36, 216);;
+
+}
+    </style>
+</head>
+<body>
+    <div class="container" id="hed">
+        <h2 id="content"> This  content</h2>
+        
+            <p id="para">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere mollitia labore corrupti placeat aspernatur ut reprehenderit, asperiores amet, cupiditate error ducimus corporis facilis! Nam magni praesentium veniam ullam neque eveniet quia explicabo earum? Sint saepe amet culpa voluptatum sed ratione, molestias earum mollitia praesentium minus, dolore id optio ea! Veritatis culpa eius quibusdam consequuntur animi incidunt voluptatibus rerum? Totam, id voluptatem saepe dolorum quisquam qui consequuntur quo incidunt, consectetur sapiente quidem nemo maxime ipsum ad, neque enim. Accusantium distinctio sed laborum ducimus aliquid voluptatum, animi soluta delectus eligendi ipsum blanditiis doloribus dolor suscipit aut dicta facere dolorum quo veritatis necessitatibus explicabo? Error in quia veniam sit nobis consectetur eos labore, aperiam eaque nemo voluptatum ipsum eveniet id tempore voluptates aliquid quos, quaerat, quisquam deserunt quod iure? Impedit sint quo possimus quam ea sapiente quisquam cumque eaque similique magni ut alias porro, eum sit rerum reiciendis doloremque in voluptatum, id nihil nostrum. Necessitatibus cum amet quidem nihil sint perferendis beatae quod quo, eligendi accusantium in, obcaecati perspiciatis facere quia natus voluptas dolor. Minus, voluptatem. Eligendi recusandae fugit vitae molestias officia voluptates, ipsum voluptatum molestiae quasi iusto expedita aperiam soluta, porro quibusdam delectus corporis eius assumenda. Illum consequatur labore amet, ducimus delectus, sit dolores nisi fugit id omnis itaque aspernatur? Temporibus sunt architecto, ad molestiae, facere eos sint impedit magnam iure facilis incidunt nisi?</p>
+        </div>
+        <button id="btn1" onclick="hide()">
+            show/hide
+
+        </button>
+<script>
+     let para= document.getElementById('para');
+     
+  
+
+     para.addEventListener( 'mouseover',function run()
+     {
+
+        alert("you r in para");
+     });
+   function hide(){
+
+    
+    let btn=document.getElementById('btn1');
+ let para= document.getElementById('para');
+
+ 
+   if( para.style.display!= 'none')
+{
+    para.style.display='none';
+ }
+ else{
+    para.style.display='block';
+
+ }
+}
+
+</script>
+
+    
+    
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>asnybc</title>
+<style>
+    #container1{
+        width: 300px;
+        height: 300px;
+        border: 1px solid black;
+    }
+</style>
+</head>
+<body>
+    <div>
+        <div id="container1">
+            <form  id="sumbits"   name="forms" >
+                NAME:<input type="text" id="name" name="fname">
+                <input type="submit" value="submit" onclick="submits1()" >
+        </form>
+        <p id="para">
+
+        </p>
+        </div>
+    </div>
+    
+<script>
+  
+   function submits1(){
+    let name1=document.getElementById('name');
+    console.log(name1); 
+
+let x=document.getElementsByName("fname").values;
+    x.innerHTML=" <p> hello this is running</p>"
+   if (x == "") 
+           {
+
+alert(" plz number entered");
+            }
+            else if(x>10||x<0)
+            {
+                confirm("wrong number entered");
+               
+            }
+            else if(x<=10&&x>0)
+            {
+confirm("its ok");
+
+            }
+            }
+   
+
+</script>
+</body>
+</html>

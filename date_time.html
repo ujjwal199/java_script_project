@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>date and time</title>
+    <style>
+        .container{
+            border: 2px solid red;
+            border-radius: 8px;
+            text-align: center;
+            background-color: bisque;
+            margin: 4px;
+
+
+        }
+        #time{
+            font-s;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        updated time is : <span id="time"> </span>
+    </div>
+    <script>
+        
+        let n=document.getElementById('time');
+
+     function timeset()
+     {
+
+       
+        n.innerHTML=new Date();
+
+     }
+     setInterval(timeset,1000);
+    </script>
+</body>
+
+</html>
